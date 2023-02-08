@@ -7,23 +7,91 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB41A0E32993E1AA003550B8 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A0E22993E1AA003550B8 /* HomeScreen.swift */; };
+		EB41A0E52993E1BA003550B8 /* MealDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A0E42993E1BA003550B8 /* MealDetailScreen.swift */; };
+		EB41A0E72993E1CC003550B8 /* OrderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A0E62993E1CC003550B8 /* OrderScreen.swift */; };
+		EB41A0E92993E1DC003550B8 /* AccountDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A0E82993E1DC003550B8 /* AccountDetailScreen.swift */; };
+		EB41A0EB2993E206003550B8 /* FavoriteFoodScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A0EA2993E206003550B8 /* FavoriteFoodScreen.swift */; };
+		EB41A0ED2993E221003550B8 /* WatchDeliveryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A0EC2993E221003550B8 /* WatchDeliveryScreen.swift */; };
+		EB41A0EF2993E321003550B8 /* LoginScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A0EE2993E321003550B8 /* LoginScreenProtocols.swift */; };
+		EB41A0F12993E32B003550B8 /* LoginScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A0F02993E32B003550B8 /* LoginScreenRouter.swift */; };
+		EB41A0F32993E331003550B8 /* LoginScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A0F22993E331003550B8 /* LoginScreenInteractor.swift */; };
+		EB41A0F52993E339003550B8 /* LoginScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A0F42993E339003550B8 /* LoginScreenPresenter.swift */; };
+		EB41A0F72993E39C003550B8 /* HomeScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A0F62993E39C003550B8 /* HomeScreenProtocols.swift */; };
+		EB41A0F92993E3A1003550B8 /* MealDetailScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A0F82993E3A1003550B8 /* MealDetailScreenProtocols.swift */; };
+		EB41A0FB2993E3AA003550B8 /* OrderScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A0FA2993E3AA003550B8 /* OrderScreenProtocols.swift */; };
+		EB41A0FD2993E3AF003550B8 /* AccountDetailScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A0FC2993E3AF003550B8 /* AccountDetailScreenProtocols.swift */; };
+		EB41A0FF2993E3B6003550B8 /* FavoriteFoodScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A0FE2993E3B6003550B8 /* FavoriteFoodScreenProtocols.swift */; };
+		EB41A1012993E3BB003550B8 /* WatchDeliveryScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A1002993E3BB003550B8 /* WatchDeliveryScreenProtocols.swift */; };
+		EB41A1032993E3CA003550B8 /* HomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A1022993E3CA003550B8 /* HomeScreenRouter.swift */; };
+		EB41A1052993E3D7003550B8 /* MealDetailScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A1042993E3D7003550B8 /* MealDetailScreenRouter.swift */; };
+		EB41A1072993E3DC003550B8 /* OrderScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A1062993E3DC003550B8 /* OrderScreenRouter.swift */; };
+		EB41A1092993E3DF003550B8 /* AccountDetailScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A1082993E3DF003550B8 /* AccountDetailScreenRouter.swift */; };
+		EB41A10B2993E3E3003550B8 /* FavoriteFoodScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A10A2993E3E3003550B8 /* FavoriteFoodScreenRouter.swift */; };
+		EB41A10D2993E3E7003550B8 /* WatchDeliveryScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A10C2993E3E7003550B8 /* WatchDeliveryScreenRouter.swift */; };
+		EB41A10F2993E3F1003550B8 /* HomeScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A10E2993E3F1003550B8 /* HomeScreenInteractor.swift */; };
+		EB41A1112993E3F7003550B8 /* MealDetailScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A1102993E3F7003550B8 /* MealDetailScreenInteractor.swift */; };
+		EB41A1132993E3FD003550B8 /* OrderScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A1122993E3FD003550B8 /* OrderScreenInteractor.swift */; };
+		EB41A1152993E402003550B8 /* AccountDetailScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A1142993E402003550B8 /* AccountDetailScreenInteractor.swift */; };
+		EB41A1172993E407003550B8 /* FavoriteFoodScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A1162993E407003550B8 /* FavoriteFoodScreenInteractor.swift */; };
+		EB41A1192993E40D003550B8 /* WatchDeliveryScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A1182993E40D003550B8 /* WatchDeliveryScreenInteractor.swift */; };
+		EB41A11B2993E418003550B8 /* HomeScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A11A2993E418003550B8 /* HomeScreenPresenter.swift */; };
+		EB41A11D2993E41D003550B8 /* MealDetailScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A11C2993E41D003550B8 /* MealDetailScreenPresenter.swift */; };
+		EB41A11F2993E421003550B8 /* OrderScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A11E2993E421003550B8 /* OrderScreenPresenter.swift */; };
+		EB41A1212993E426003550B8 /* AccountDetailScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A1202993E426003550B8 /* AccountDetailScreenPresenter.swift */; };
+		EB41A1232993E42C003550B8 /* FavoriteFoodScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A1222993E42C003550B8 /* FavoriteFoodScreenPresenter.swift */; };
+		EB41A1252993E431003550B8 /* WatchDeliveryScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41A1242993E431003550B8 /* WatchDeliveryScreenPresenter.swift */; };
 		EB739BB02993788D0065634B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB739BAF2993788D0065634B /* GoogleService-Info.plist */; };
 		EB739BB329937A660065634B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EB739BB229937A660065634B /* FirebaseAuth */; };
 		EB739BB529937A660065634B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = EB739BB429937A660065634B /* FirebaseDatabase */; };
 		EBB02BBA29912F57008A583F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB02BB929912F57008A583F /* AppDelegate.swift */; };
 		EBB02BBC29912F57008A583F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB02BBB29912F57008A583F /* SceneDelegate.swift */; };
-		EBB02BBE29912F57008A583F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB02BBD29912F57008A583F /* ViewController.swift */; };
+		EBB02BBE29912F57008A583F /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB02BBD29912F57008A583F /* LoginScreen.swift */; };
 		EBB02BC129912F57008A583F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB02BBF29912F57008A583F /* Main.storyboard */; };
 		EBB02BC329912F57008A583F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB02BC229912F57008A583F /* Assets.xcassets */; };
 		EBB02BC629912F57008A583F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB02BC429912F57008A583F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB41A0E22993E1AA003550B8 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		EB41A0E42993E1BA003550B8 /* MealDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailScreen.swift; sourceTree = "<group>"; };
+		EB41A0E62993E1CC003550B8 /* OrderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderScreen.swift; sourceTree = "<group>"; };
+		EB41A0E82993E1DC003550B8 /* AccountDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailScreen.swift; sourceTree = "<group>"; };
+		EB41A0EA2993E206003550B8 /* FavoriteFoodScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFoodScreen.swift; sourceTree = "<group>"; };
+		EB41A0EC2993E221003550B8 /* WatchDeliveryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDeliveryScreen.swift; sourceTree = "<group>"; };
+		EB41A0EE2993E321003550B8 /* LoginScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenProtocols.swift; sourceTree = "<group>"; };
+		EB41A0F02993E32B003550B8 /* LoginScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenRouter.swift; sourceTree = "<group>"; };
+		EB41A0F22993E331003550B8 /* LoginScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenInteractor.swift; sourceTree = "<group>"; };
+		EB41A0F42993E339003550B8 /* LoginScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenPresenter.swift; sourceTree = "<group>"; };
+		EB41A0F62993E39C003550B8 /* HomeScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenProtocols.swift; sourceTree = "<group>"; };
+		EB41A0F82993E3A1003550B8 /* MealDetailScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailScreenProtocols.swift; sourceTree = "<group>"; };
+		EB41A0FA2993E3AA003550B8 /* OrderScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderScreenProtocols.swift; sourceTree = "<group>"; };
+		EB41A0FC2993E3AF003550B8 /* AccountDetailScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailScreenProtocols.swift; sourceTree = "<group>"; };
+		EB41A0FE2993E3B6003550B8 /* FavoriteFoodScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFoodScreenProtocols.swift; sourceTree = "<group>"; };
+		EB41A1002993E3BB003550B8 /* WatchDeliveryScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDeliveryScreenProtocols.swift; sourceTree = "<group>"; };
+		EB41A1022993E3CA003550B8 /* HomeScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRouter.swift; sourceTree = "<group>"; };
+		EB41A1042993E3D7003550B8 /* MealDetailScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailScreenRouter.swift; sourceTree = "<group>"; };
+		EB41A1062993E3DC003550B8 /* OrderScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderScreenRouter.swift; sourceTree = "<group>"; };
+		EB41A1082993E3DF003550B8 /* AccountDetailScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailScreenRouter.swift; sourceTree = "<group>"; };
+		EB41A10A2993E3E3003550B8 /* FavoriteFoodScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFoodScreenRouter.swift; sourceTree = "<group>"; };
+		EB41A10C2993E3E7003550B8 /* WatchDeliveryScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDeliveryScreenRouter.swift; sourceTree = "<group>"; };
+		EB41A10E2993E3F1003550B8 /* HomeScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenInteractor.swift; sourceTree = "<group>"; };
+		EB41A1102993E3F7003550B8 /* MealDetailScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailScreenInteractor.swift; sourceTree = "<group>"; };
+		EB41A1122993E3FD003550B8 /* OrderScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderScreenInteractor.swift; sourceTree = "<group>"; };
+		EB41A1142993E402003550B8 /* AccountDetailScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailScreenInteractor.swift; sourceTree = "<group>"; };
+		EB41A1162993E407003550B8 /* FavoriteFoodScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFoodScreenInteractor.swift; sourceTree = "<group>"; };
+		EB41A1182993E40D003550B8 /* WatchDeliveryScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDeliveryScreenInteractor.swift; sourceTree = "<group>"; };
+		EB41A11A2993E418003550B8 /* HomeScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPresenter.swift; sourceTree = "<group>"; };
+		EB41A11C2993E41D003550B8 /* MealDetailScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailScreenPresenter.swift; sourceTree = "<group>"; };
+		EB41A11E2993E421003550B8 /* OrderScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderScreenPresenter.swift; sourceTree = "<group>"; };
+		EB41A1202993E426003550B8 /* AccountDetailScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailScreenPresenter.swift; sourceTree = "<group>"; };
+		EB41A1222993E42C003550B8 /* FavoriteFoodScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFoodScreenPresenter.swift; sourceTree = "<group>"; };
+		EB41A1242993E431003550B8 /* WatchDeliveryScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDeliveryScreenPresenter.swift; sourceTree = "<group>"; };
 		EB739BAF2993788D0065634B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EBB02BB629912F57008A583F /* GraduationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraduationProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB02BB929912F57008A583F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBB02BBB29912F57008A583F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EBB02BBD29912F57008A583F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBB02BBD29912F57008A583F /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		EBB02BC029912F57008A583F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBB02BC229912F57008A583F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBB02BC529912F57008A583F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,6 +111,370 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB41A0B82993D7B1003550B8 /* loginscreen-module */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0C32993DFE0003550B8 /* protocols */,
+				EB41A0C22993DFD7003550B8 /* router */,
+				EB41A0C12993DFB1003550B8 /* interactor */,
+				EB41A0C02993DFA6003550B8 /* presenter */,
+				EB41A0BF2993DFA1003550B8 /* view */,
+			);
+			path = "loginscreen-module";
+			sourceTree = "<group>";
+		};
+		EB41A0B92993D92B003550B8 /* homescreen-module */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0C82993E050003550B8 /* protocols */,
+				EB41A0C72993E04B003550B8 /* router */,
+				EB41A0C62993E045003550B8 /* interactor */,
+				EB41A0C52993E03A003550B8 /* presenter */,
+				EB41A0C42993E025003550B8 /* view */,
+			);
+			path = "homescreen-module";
+			sourceTree = "<group>";
+		};
+		EB41A0BA2993D9AB003550B8 /* mealdetailscreen-module */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0CD2993E0C5003550B8 /* protocols */,
+				EB41A0CC2993E0BA003550B8 /* router */,
+				EB41A0CB2993E078003550B8 /* interactor */,
+				EB41A0CA2993E06E003550B8 /* presenter */,
+				EB41A0C92993E06A003550B8 /* view */,
+			);
+			path = "mealdetailscreen-module";
+			sourceTree = "<group>";
+		};
+		EB41A0BB2993DA12003550B8 /* orderscreen-module */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0DE2993E13E003550B8 /* protocols */,
+				EB41A0DA2993E12A003550B8 /* router */,
+				EB41A0D62993E10D003550B8 /* interactor */,
+				EB41A0D22993E0F3003550B8 /* presenter */,
+				EB41A0CE2993E0DF003550B8 /* view */,
+			);
+			path = "orderscreen-module";
+			sourceTree = "<group>";
+		};
+		EB41A0BC2993DB5B003550B8 /* accountdetailscreen-module */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0DF2993E142003550B8 /* protocols */,
+				EB41A0DB2993E12E003550B8 /* router */,
+				EB41A0D72993E113003550B8 /* interactor */,
+				EB41A0D32993E0FC003550B8 /* presenter */,
+				EB41A0CF2993E0E3003550B8 /* view */,
+			);
+			path = "accountdetailscreen-module";
+			sourceTree = "<group>";
+		};
+		EB41A0BD2993DB8B003550B8 /* favoritefoodscreen-module */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0E02993E145003550B8 /* protocols */,
+				EB41A0DC2993E131003550B8 /* router */,
+				EB41A0D82993E118003550B8 /* interactor */,
+				EB41A0D42993E100003550B8 /* presenter */,
+				EB41A0D02993E0E8003550B8 /* view */,
+			);
+			path = "favoritefoodscreen-module";
+			sourceTree = "<group>";
+		};
+		EB41A0BE2993DC30003550B8 /* watchdeliveryscreen-module */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0E12993E148003550B8 /* protocols */,
+				EB41A0DD2993E134003550B8 /* router */,
+				EB41A0D92993E11E003550B8 /* interactor */,
+				EB41A0D52993E104003550B8 /* presenter */,
+				EB41A0D12993E0EC003550B8 /* view */,
+			);
+			path = "watchdeliveryscreen-module";
+			sourceTree = "<group>";
+		};
+		EB41A0BF2993DFA1003550B8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				EBB02BBD29912F57008A583F /* LoginScreen.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		EB41A0C02993DFA6003550B8 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0F42993E339003550B8 /* LoginScreenPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		EB41A0C12993DFB1003550B8 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0F22993E331003550B8 /* LoginScreenInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		EB41A0C22993DFD7003550B8 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0F02993E32B003550B8 /* LoginScreenRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		EB41A0C32993DFE0003550B8 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0EE2993E321003550B8 /* LoginScreenProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		EB41A0C42993E025003550B8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0E22993E1AA003550B8 /* HomeScreen.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		EB41A0C52993E03A003550B8 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A11A2993E418003550B8 /* HomeScreenPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		EB41A0C62993E045003550B8 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A10E2993E3F1003550B8 /* HomeScreenInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		EB41A0C72993E04B003550B8 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A1022993E3CA003550B8 /* HomeScreenRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		EB41A0C82993E050003550B8 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0F62993E39C003550B8 /* HomeScreenProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		EB41A0C92993E06A003550B8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0E42993E1BA003550B8 /* MealDetailScreen.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		EB41A0CA2993E06E003550B8 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A11C2993E41D003550B8 /* MealDetailScreenPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		EB41A0CB2993E078003550B8 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A1102993E3F7003550B8 /* MealDetailScreenInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		EB41A0CC2993E0BA003550B8 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A1042993E3D7003550B8 /* MealDetailScreenRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		EB41A0CD2993E0C5003550B8 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0F82993E3A1003550B8 /* MealDetailScreenProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		EB41A0CE2993E0DF003550B8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0E62993E1CC003550B8 /* OrderScreen.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		EB41A0CF2993E0E3003550B8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0E82993E1DC003550B8 /* AccountDetailScreen.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		EB41A0D02993E0E8003550B8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0EA2993E206003550B8 /* FavoriteFoodScreen.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		EB41A0D12993E0EC003550B8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0EC2993E221003550B8 /* WatchDeliveryScreen.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		EB41A0D22993E0F3003550B8 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A11E2993E421003550B8 /* OrderScreenPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		EB41A0D32993E0FC003550B8 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A1202993E426003550B8 /* AccountDetailScreenPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		EB41A0D42993E100003550B8 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A1222993E42C003550B8 /* FavoriteFoodScreenPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		EB41A0D52993E104003550B8 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A1242993E431003550B8 /* WatchDeliveryScreenPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		EB41A0D62993E10D003550B8 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A1122993E3FD003550B8 /* OrderScreenInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		EB41A0D72993E113003550B8 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A1142993E402003550B8 /* AccountDetailScreenInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		EB41A0D82993E118003550B8 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A1162993E407003550B8 /* FavoriteFoodScreenInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		EB41A0D92993E11E003550B8 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A1182993E40D003550B8 /* WatchDeliveryScreenInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		EB41A0DA2993E12A003550B8 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A1062993E3DC003550B8 /* OrderScreenRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		EB41A0DB2993E12E003550B8 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A1082993E3DF003550B8 /* AccountDetailScreenRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		EB41A0DC2993E131003550B8 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A10A2993E3E3003550B8 /* FavoriteFoodScreenRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		EB41A0DD2993E134003550B8 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A10C2993E3E7003550B8 /* WatchDeliveryScreenRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		EB41A0DE2993E13E003550B8 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0FA2993E3AA003550B8 /* OrderScreenProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		EB41A0DF2993E142003550B8 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0FC2993E3AF003550B8 /* AccountDetailScreenProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		EB41A0E02993E145003550B8 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0FE2993E3B6003550B8 /* FavoriteFoodScreenProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		EB41A0E12993E148003550B8 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A1002993E3BB003550B8 /* WatchDeliveryScreenProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
 		EBB02BAD29912F57008A583F = {
 			isa = PBXGroup;
 			children = (
@@ -64,7 +496,13 @@
 			children = (
 				EBB02BB929912F57008A583F /* AppDelegate.swift */,
 				EBB02BBB29912F57008A583F /* SceneDelegate.swift */,
-				EBB02BBD29912F57008A583F /* ViewController.swift */,
+				EB41A0B82993D7B1003550B8 /* loginscreen-module */,
+				EB41A0B92993D92B003550B8 /* homescreen-module */,
+				EB41A0BA2993D9AB003550B8 /* mealdetailscreen-module */,
+				EB41A0BB2993DA12003550B8 /* orderscreen-module */,
+				EB41A0BC2993DB5B003550B8 /* accountdetailscreen-module */,
+				EB41A0BD2993DB8B003550B8 /* favoritefoodscreen-module */,
+				EB41A0BE2993DC30003550B8 /* watchdeliveryscreen-module */,
 				EBB02BBF29912F57008A583F /* Main.storyboard */,
 				EBB02BC229912F57008A583F /* Assets.xcassets */,
 				EBB02BC429912F57008A583F /* LaunchScreen.storyboard */,
@@ -153,9 +591,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBB02BBE29912F57008A583F /* ViewController.swift in Sources */,
+				EB41A0F52993E339003550B8 /* LoginScreenPresenter.swift in Sources */,
+				EB41A0F72993E39C003550B8 /* HomeScreenProtocols.swift in Sources */,
+				EB41A10F2993E3F1003550B8 /* HomeScreenInteractor.swift in Sources */,
+				EB41A0E32993E1AA003550B8 /* HomeScreen.swift in Sources */,
+				EB41A1252993E431003550B8 /* WatchDeliveryScreenPresenter.swift in Sources */,
+				EB41A0FB2993E3AA003550B8 /* OrderScreenProtocols.swift in Sources */,
+				EB41A1012993E3BB003550B8 /* WatchDeliveryScreenProtocols.swift in Sources */,
+				EB41A11B2993E418003550B8 /* HomeScreenPresenter.swift in Sources */,
+				EB41A1172993E407003550B8 /* FavoriteFoodScreenInteractor.swift in Sources */,
+				EBB02BBE29912F57008A583F /* LoginScreen.swift in Sources */,
+				EB41A0ED2993E221003550B8 /* WatchDeliveryScreen.swift in Sources */,
+				EB41A11F2993E421003550B8 /* OrderScreenPresenter.swift in Sources */,
+				EB41A0E92993E1DC003550B8 /* AccountDetailScreen.swift in Sources */,
+				EB41A1032993E3CA003550B8 /* HomeScreenRouter.swift in Sources */,
+				EB41A0EB2993E206003550B8 /* FavoriteFoodScreen.swift in Sources */,
+				EB41A0F32993E331003550B8 /* LoginScreenInteractor.swift in Sources */,
+				EB41A0E72993E1CC003550B8 /* OrderScreen.swift in Sources */,
+				EB41A10B2993E3E3003550B8 /* FavoriteFoodScreenRouter.swift in Sources */,
+				EB41A1212993E426003550B8 /* AccountDetailScreenPresenter.swift in Sources */,
+				EB41A1092993E3DF003550B8 /* AccountDetailScreenRouter.swift in Sources */,
+				EB41A1192993E40D003550B8 /* WatchDeliveryScreenInteractor.swift in Sources */,
+				EB41A1052993E3D7003550B8 /* MealDetailScreenRouter.swift in Sources */,
+				EB41A11D2993E41D003550B8 /* MealDetailScreenPresenter.swift in Sources */,
 				EBB02BBA29912F57008A583F /* AppDelegate.swift in Sources */,
+				EB41A1072993E3DC003550B8 /* OrderScreenRouter.swift in Sources */,
+				EB41A0F92993E3A1003550B8 /* MealDetailScreenProtocols.swift in Sources */,
+				EB41A0E52993E1BA003550B8 /* MealDetailScreen.swift in Sources */,
+				EB41A0FF2993E3B6003550B8 /* FavoriteFoodScreenProtocols.swift in Sources */,
+				EB41A1152993E402003550B8 /* AccountDetailScreenInteractor.swift in Sources */,
 				EBB02BBC29912F57008A583F /* SceneDelegate.swift in Sources */,
+				EB41A0FD2993E3AF003550B8 /* AccountDetailScreenProtocols.swift in Sources */,
+				EB41A0F12993E32B003550B8 /* LoginScreenRouter.swift in Sources */,
+				EB41A1112993E3F7003550B8 /* MealDetailScreenInteractor.swift in Sources */,
+				EB41A10D2993E3E7003550B8 /* WatchDeliveryScreenRouter.swift in Sources */,
+				EB41A1132993E3FD003550B8 /* OrderScreenInteractor.swift in Sources */,
+				EB41A1232993E42C003550B8 /* FavoriteFoodScreenPresenter.swift in Sources */,
+				EB41A0EF2993E321003550B8 /* LoginScreenProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +777,7 @@
 				DEVELOPMENT_TEAM = 8VZXPVXH33;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GraduationProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Hemen Yemek";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -333,6 +806,7 @@
 				DEVELOPMENT_TEAM = 8VZXPVXH33;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GraduationProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Hemen Yemek";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginScreen.swift
 //  GraduationProject
 //
 //  Created by Berkay Tuncel on 6.02.2023.
@@ -7,13 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginScreen: UIViewController {
 
+    var loginScreenPresenterObject: ViewToPresenterLoginScreenProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-
 }
 
