@@ -16,9 +16,9 @@ class LoginScreenRouter: PresenterToRouterLoginScreenProtocol {
         
         //Presenter
         ref.loginScreenPresenterObject?.loginScreenInteractor = LoginScreenInteractor()
-//        ref.loginScreenPresenterObject?.loginScreenView = ref
-//
-//        //Interactor
-//        ref.loginScreenPresenterObject?.loginScreenInteractor?.loginScreenPresenter = presenter
+        ref.loginScreenPresenterObject?.loginScreenView = ref
+
+        //Interactor
+        ref.loginScreenPresenterObject?.loginScreenInteractor?.loginScreenPresenter = presenter
     }
 }

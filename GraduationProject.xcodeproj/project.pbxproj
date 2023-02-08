@@ -44,6 +44,8 @@
 		EB739BB02993788D0065634B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB739BAF2993788D0065634B /* GoogleService-Info.plist */; };
 		EB739BB329937A660065634B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EB739BB229937A660065634B /* FirebaseAuth */; };
 		EB739BB529937A660065634B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = EB739BB429937A660065634B /* FirebaseDatabase */; };
+		EBAAA71229945A8D00374286 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAAA71129945A8D00374286 /* String+Ext.swift */; };
+		EBAAA7182994698F00374286 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAAA7172994698F00374286 /* Constants.swift */; };
 		EBB02BBA29912F57008A583F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB02BB929912F57008A583F /* AppDelegate.swift */; };
 		EBB02BBC29912F57008A583F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB02BBB29912F57008A583F /* SceneDelegate.swift */; };
 		EBB02BBE29912F57008A583F /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB02BBD29912F57008A583F /* LoginScreen.swift */; };
@@ -88,6 +90,8 @@
 		EB41A1222993E42C003550B8 /* FavoriteFoodScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFoodScreenPresenter.swift; sourceTree = "<group>"; };
 		EB41A1242993E431003550B8 /* WatchDeliveryScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDeliveryScreenPresenter.swift; sourceTree = "<group>"; };
 		EB739BAF2993788D0065634B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EBAAA71129945A8D00374286 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		EBAAA7172994698F00374286 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EBB02BB629912F57008A583F /* GraduationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraduationProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB02BB929912F57008A583F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBB02BBB29912F57008A583F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -475,6 +479,29 @@
 			path = protocols;
 			sourceTree = "<group>";
 		};
+		EBAAA71029945A6100374286 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EBAAA71129945A8D00374286 /* String+Ext.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		EBAAA713299462E400374286 /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utilities;
+			sourceTree = "<group>";
+		};
+		EBAAA7162994693D00374286 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				EBAAA7172994698F00374286 /* Constants.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
 		EBB02BAD29912F57008A583F = {
 			isa = PBXGroup;
 			children = (
@@ -496,6 +523,9 @@
 			children = (
 				EBB02BB929912F57008A583F /* AppDelegate.swift */,
 				EBB02BBB29912F57008A583F /* SceneDelegate.swift */,
+				EBAAA7162994693D00374286 /* entity */,
+				EBAAA713299462E400374286 /* utilities */,
+				EBAAA71029945A6100374286 /* extensions */,
 				EB41A0B82993D7B1003550B8 /* loginscreen-module */,
 				EB41A0B92993D92B003550B8 /* homescreen-module */,
 				EB41A0BA2993D9AB003550B8 /* mealdetailscreen-module */,
@@ -611,6 +641,7 @@
 				EB41A10B2993E3E3003550B8 /* FavoriteFoodScreenRouter.swift in Sources */,
 				EB41A1212993E426003550B8 /* AccountDetailScreenPresenter.swift in Sources */,
 				EB41A1092993E3DF003550B8 /* AccountDetailScreenRouter.swift in Sources */,
+				EBAAA7182994698F00374286 /* Constants.swift in Sources */,
 				EB41A1192993E40D003550B8 /* WatchDeliveryScreenInteractor.swift in Sources */,
 				EB41A1052993E3D7003550B8 /* MealDetailScreenRouter.swift in Sources */,
 				EB41A11D2993E41D003550B8 /* MealDetailScreenPresenter.swift in Sources */,
@@ -623,6 +654,7 @@
 				EBB02BBC29912F57008A583F /* SceneDelegate.swift in Sources */,
 				EB41A0FD2993E3AF003550B8 /* AccountDetailScreenProtocols.swift in Sources */,
 				EB41A0F12993E32B003550B8 /* LoginScreenRouter.swift in Sources */,
+				EBAAA71229945A8D00374286 /* String+Ext.swift in Sources */,
 				EB41A1112993E3F7003550B8 /* MealDetailScreenInteractor.swift in Sources */,
 				EB41A10D2993E3E7003550B8 /* WatchDeliveryScreenRouter.swift in Sources */,
 				EB41A1132993E3FD003550B8 /* OrderScreenInteractor.swift in Sources */,

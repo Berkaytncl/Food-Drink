@@ -6,27 +6,37 @@
 //
 
 import Foundation
+import Firebase
 
 class LoginScreenInteractor: PresenterToInteractorLoginScreenProtocol {
     
-    //var loginScreenPresenter: InteractorToPresenterLoginScreenProtocol?
+    var loginScreenPresenter: InteractorToPresenterLoginScreenProtocol?
     
-//    func uploadTodos() {
-//        var todoList = [ToDos]()
-//        todoList = DatabaseManager.shared.uploadTodos()
-//
-//        homeScreenPresenter?.dataSendToPresenter(todoList: todoList)
-//    }
-//
-//    func search(searchWord: String) {
-//        var todoList = [ToDos]()
-//        todoList = DatabaseManager.shared.search(searchWord: searchWord)
-//
-//        homeScreenPresenter?.dataSendToPresenter(todoList: todoList)
-//    }
-//
-//    func delete(todoId: Int) {
-//        DatabaseManager.shared.delete(todoId: todoId)
-//        uploadTodos()
-//    }
+    func login(email: String?, password: String?) {
+        if !email.isNilOrEmpty && !password.isNilOrEmpty {
+            Auth.auth().signIn(withEmail: email!, password: password!) { authDataResult, error in
+                if error != nil {
+                    self.loginScreenPresenter?.dataSendToPresenter(loginSuccess: false, error: error)
+                } else {
+                    self.loginScreenPresenter?.dataSendToPresenter(loginSuccess: true, error: nil)
+                }
+            }
+        } else {
+            self.loginScreenPresenter?.dataSendToPresenter(loginSuccess: false, error: nil)
+        }
+    }
+    
+    func signup(email: String?, password: String?) {
+        if !email.isNilOrEmpty && !password.isNilOrEmpty {
+            Auth.auth().createUser(withEmail: email!, password: password!) { authDataResult, error in
+                if error != nil {
+                    self.loginScreenPresenter?.dataSendToPresenter(loginSuccess: false, error: error)
+                } else {
+                    self.loginScreenPresenter?.dataSendToPresenter(loginSuccess: true, error: nil)
+                }
+            }
+        } else {
+            self.loginScreenPresenter?.dataSendToPresenter(loginSuccess: false, error: nil)
+        }
+    }
 }

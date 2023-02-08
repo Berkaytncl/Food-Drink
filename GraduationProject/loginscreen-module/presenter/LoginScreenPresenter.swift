@@ -10,23 +10,19 @@ import Foundation
 class LoginScreenPresenter: ViewToPresenterLoginScreenProtocol {
     
     var loginScreenInteractor: PresenterToInteractorLoginScreenProtocol?
-    //var loginScreenView: PresenterToViewLoginScreenProtocol?
+    var loginScreenView: PresenterToViewLoginScreenProtocol?
     
-//    func uploadTodos() {
-//        homeScreenInteractor?.uploadTodos()
-//    }
-//
-//    func search(searchWord: String) {
-//        homeScreenInteractor?.search(searchWord: searchWord)
-//    }
-//
-//    func delete(todoId: Int) {
-//        homeScreenInteractor?.delete(todoId: todoId)
-//    }
+    func login(email: String?, password: String?) {
+        loginScreenInteractor?.login(email: email, password: password)
+    }
+
+    func signup(email: String?, password: String?) {
+        loginScreenInteractor?.signup(email: email, password: password)
+    }
 }
 
 extension LoginScreenPresenter: InteractorToPresenterLoginScreenProtocol {
-//    func dataSendToPresenter(todoList: [ToDos]) {
-//        homeScreenView?.dataSendToView(todoList: todoList)
-//    }
+    func dataSendToPresenter(loginSuccess: Bool, error: Error?) {
+        loginScreenView?.dataSendToView(loginSuccess: loginSuccess, error: error)
+    }
 }

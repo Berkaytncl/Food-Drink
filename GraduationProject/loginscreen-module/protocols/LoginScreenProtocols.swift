@@ -10,19 +10,17 @@ import Foundation
 //Main Protocols
 protocol ViewToPresenterLoginScreenProtocol {
     var loginScreenInteractor: PresenterToInteractorLoginScreenProtocol? { get set }
-    //var loginScreenView: PresenterToViewLoginScreenProtocol? { get set }
+    var loginScreenView: PresenterToViewLoginScreenProtocol? { get set }
     
-    //func uploadTodos()
-    //func search(searchWord: String)
-    //func delete(todoId: Int)
+    func login(email: String?, password: String?)
+    func signup(email: String?, password: String?)
 }
 
 protocol PresenterToInteractorLoginScreenProtocol {
-    //var loginScreenPresenter: InteractorToPresenterLoginScreenProtocol? { get set }
+    var loginScreenPresenter: InteractorToPresenterLoginScreenProtocol? { get set }
     
-    //func uploadTodos()
-    //func search(searchWord: String)
-    //func delete(todoId: Int)
+    func login(email: String?, password: String?)
+    func signup(email: String?, password: String?)
 }
 
 //Router Protocol
@@ -32,9 +30,9 @@ protocol PresenterToRouterLoginScreenProtocol {
 
 //Carrer Protocoller
 protocol InteractorToPresenterLoginScreenProtocol {
-    //func dataSendToPresenter(todoList: [ToDos])
+    func dataSendToPresenter(loginSuccess: Bool, error: Error?)
 }
 
 protocol PresenterToViewLoginScreenProtocol {
-    //func dataSendToView(todoList: [ToDos])
+    func dataSendToView(loginSuccess: Bool, error: Error?)
 }
