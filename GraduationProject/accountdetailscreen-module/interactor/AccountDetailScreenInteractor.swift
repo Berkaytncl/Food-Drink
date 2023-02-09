@@ -6,27 +6,18 @@
 //
 
 import Foundation
+import Firebase
 
 class AccountDetailScreenInteractor: PresenterToInteractorAccountDetailScreenProtocol {
     
-    //var accountDetailScreenPresenter: InteractorToPresenterAccountDetailScreenProtocol?
+    var accountDetailScreenPresenter: InteractorToPresenterAccountDetailScreenProtocol?
     
-//    func uploadTodos() {
-//        var todoList = [ToDos]()
-//        todoList = DatabaseManager.shared.uploadTodos()
-//
-//        homeScreenPresenter?.dataSendToPresenter(todoList: todoList)
-//    }
-//
-//    func search(searchWord: String) {
-//        var todoList = [ToDos]()
-//        todoList = DatabaseManager.shared.search(searchWord: searchWord)
-//
-//        homeScreenPresenter?.dataSendToPresenter(todoList: todoList)
-//    }
-//
-//    func delete(todoId: Int) {
-//        DatabaseManager.shared.delete(todoId: todoId)
-//        uploadTodos()
-//    }
+    func logout() {
+        do {
+            try Auth.auth().signOut()
+            accountDetailScreenPresenter?.dataSendToPresenter(error: nil)
+        } catch {
+            accountDetailScreenPresenter?.dataSendToPresenter(error: error)
+        }
+    }
 }

@@ -21,4 +21,5 @@ enum Constants {
     static let ok = "OK"
     static let error = "Error"
     static let enterValidMailOrPassword = "Please enter valid email or password!"
+    static let couldNotLogOut = "Could not log out"
 }

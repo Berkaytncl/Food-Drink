@@ -10,23 +10,15 @@ import Foundation
 class AccountDetailScreenPresenter: ViewToPresenterAccountDetailScreenProtocol {
     
     var accountDetailScreenInteractor: PresenterToInteractorAccountDetailScreenProtocol?
-    //var accountDetailScreenView: PresenterToViewAccountDetailScreenProtocol?
+    var accountDetailScreenView: PresenterToViewAccountDetailScreenProtocol?
     
-//    func uploadTodos() {
-//        homeScreenInteractor?.uploadTodos()
-//    }
-//
-//    func search(searchWord: String) {
-//        homeScreenInteractor?.search(searchWord: searchWord)
-//    }
-//
-//    func delete(todoId: Int) {
-//        homeScreenInteractor?.delete(todoId: todoId)
-//    }
+    func logout() {
+        accountDetailScreenInteractor?.logout()
+    }
 }
 
 extension AccountDetailScreenPresenter: InteractorToPresenterAccountDetailScreenProtocol {
-//    func dataSendToPresenter(todoList: [ToDos]) {
-//        homeScreenView?.dataSendToView(todoList: todoList)
-//    }
+    func dataSendToPresenter(error: Error?) {
+        accountDetailScreenView?.dataSendToView(error: error)
+    }
 }

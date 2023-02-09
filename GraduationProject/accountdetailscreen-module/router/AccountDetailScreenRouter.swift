@@ -16,9 +16,9 @@ class AccountDetailScreenRouter: PresenterToRouterAccountDetailScreenProtocol {
         
         //Presenter
         ref.accountDetailScreenPresenterObject?.accountDetailScreenInteractor = AccountDetailScreenInteractor()
-//        ref.accountDetailScreenPresenterObject?.accountDetailScreenView = ref
-//        
-//        //Interactor
-//        ref.accountDetailScreenPresenterObject?.accountDetailScreenInteractor?.accountDetailScreenPresenter = presenter
+        ref.accountDetailScreenPresenterObject?.accountDetailScreenView = ref
+        
+        //Interactor
+        ref.accountDetailScreenPresenterObject?.accountDetailScreenInteractor?.accountDetailScreenPresenter = presenter
     }
 }

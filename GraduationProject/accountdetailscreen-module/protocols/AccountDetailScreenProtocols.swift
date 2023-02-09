@@ -10,19 +10,15 @@ import Foundation
 //Main Protocols
 protocol ViewToPresenterAccountDetailScreenProtocol {
     var accountDetailScreenInteractor: PresenterToInteractorAccountDetailScreenProtocol? { get set }
-    //var accountDetailScreenView: PresenterToViewAccountDetailScreenProtocol? { get set }
+    var accountDetailScreenView: PresenterToViewAccountDetailScreenProtocol? { get set }
     
-    //func uploadTodos()
-    //func search(searchWord: String)
-    //func delete(todoId: Int)
+    func logout()
 }
 
 protocol PresenterToInteractorAccountDetailScreenProtocol {
-    //var accountDetailScreenPresenter: InteractorToPresenterAccountDetailScreenProtocol? { get set }
+    var accountDetailScreenPresenter: InteractorToPresenterAccountDetailScreenProtocol? { get set }
     
-    //func uploadTodos()
-    //func search(searchWord: String)
-    //func delete(todoId: Int)
+    func logout()
 }
 
 //Router Protocol
@@ -32,9 +28,9 @@ protocol PresenterToRouterAccountDetailScreenProtocol {
 
 //Carrer Protocoller
 protocol InteractorToPresenterAccountDetailScreenProtocol {
-    //func dataSendToPresenter(todoList: [ToDos])
+    func dataSendToPresenter(error: Error?)
 }
 
 protocol PresenterToViewAccountDetailScreenProtocol {
-    //func dataSendToView(todoList: [ToDos])
+    func dataSendToView(error: Error?)
 }
