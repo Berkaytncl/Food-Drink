@@ -16,9 +16,9 @@ class HomeScreenRouter: PresenterToRouterHomeScreenProtocol {
         
         //Presenter
         ref.homeScreenPresenterObject?.homeScreenInteractor = HomeScreenInteractor()
-//        ref.homeScreenPresenterObject?.homeScreenView = ref
-//        
-//        //Interactor
-//        ref.homeScreenPresenterObject?.homeScreenInteractor?.homeScreenPresenter = presenter
+        ref.homeScreenPresenterObject?.homeScreenView = ref
+        
+        //Interactor
+        ref.homeScreenPresenterObject?.homeScreenInteractor?.homeScreenPresenter = presenter
     }
 }

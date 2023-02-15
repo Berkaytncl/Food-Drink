@@ -10,11 +10,11 @@ import Foundation
 class HomeScreenPresenter: ViewToPresenterHomeScreenProtocol {
     
     var homeScreenInteractor: PresenterToInteractorHomeScreenProtocol?
-    //var homeScreenView: PresenterToViewHomeScreenProtocol?
+    var homeScreenView: PresenterToViewHomeScreenProtocol?
     
-//    func uploadTodos() {
-//        homeScreenInteractor?.uploadTodos()
-//    }
+    func uploadMeals() {
+        homeScreenInteractor?.uploadMeals()
+    }
 //
 //    func search(searchWord: String) {
 //        homeScreenInteractor?.search(searchWord: searchWord)
@@ -26,7 +26,7 @@ class HomeScreenPresenter: ViewToPresenterHomeScreenProtocol {
 }
 
 extension HomeScreenPresenter: InteractorToPresenterHomeScreenProtocol {
-//    func dataSendToPresenter(todoList: [ToDos]) {
-//        homeScreenView?.dataSendToView(todoList: todoList)
-//    }
+    func dataSendToPresenter(meals: [Meal]) {
+        homeScreenView?.dataSendToView(meals: meals)
+    }
 }

@@ -44,8 +44,17 @@
 		EB739BB02993788D0065634B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB739BAF2993788D0065634B /* GoogleService-Info.plist */; };
 		EB739BB329937A660065634B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EB739BB229937A660065634B /* FirebaseAuth */; };
 		EB739BB529937A660065634B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = EB739BB429937A660065634B /* FirebaseDatabase */; };
+		EB8593AF299578D4006ABE92 /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8593AE299578D4006ABE92 /* MealCell.swift */; };
+		EB915ED029959F4E0029C554 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB915ECF29959F4E0029C554 /* UIHelper.swift */; };
+		EB915ED229959FA90029C554 /* CGFloat+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB915ED129959FA90029C554 /* CGFloat+Ext.swift */; };
+		EB936D482995A7170027C732 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EB936D472995A7170027C732 /* Kingfisher */; };
+		EB936D4A2995AECF0027C732 /* Meals.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB936D492995AECF0027C732 /* Meals.swift */; };
+		EB936D4C2995B0780027C732 /* BasketMeals.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB936D4B2995B0780027C732 /* BasketMeals.swift */; };
+		EB936D502995C8E10027C732 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB936D4F2995C8E10027C732 /* NetworkManager.swift */; };
 		EBAAA71229945A8D00374286 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAAA71129945A8D00374286 /* String+Ext.swift */; };
 		EBAAA7182994698F00374286 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAAA7172994698F00374286 /* Constants.swift */; };
+		EBAF19852996E5CD00A97A53 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EBAF19842996E5CD00A97A53 /* Alamofire */; };
+		EBAF19882997023000A97A53 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EBAF19872997023000A97A53 /* Lottie */; };
 		EBB02BBA29912F57008A583F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB02BB929912F57008A583F /* AppDelegate.swift */; };
 		EBB02BBC29912F57008A583F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB02BBB29912F57008A583F /* SceneDelegate.swift */; };
 		EBB02BBE29912F57008A583F /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB02BBD29912F57008A583F /* LoginScreen.swift */; };
@@ -90,6 +99,12 @@
 		EB41A1222993E42C003550B8 /* FavoriteFoodScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFoodScreenPresenter.swift; sourceTree = "<group>"; };
 		EB41A1242993E431003550B8 /* WatchDeliveryScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDeliveryScreenPresenter.swift; sourceTree = "<group>"; };
 		EB739BAF2993788D0065634B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EB8593AE299578D4006ABE92 /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
+		EB915ECF29959F4E0029C554 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		EB915ED129959FA90029C554 /* CGFloat+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Ext.swift"; sourceTree = "<group>"; };
+		EB936D492995AECF0027C732 /* Meals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meals.swift; sourceTree = "<group>"; };
+		EB936D4B2995B0780027C732 /* BasketMeals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketMeals.swift; sourceTree = "<group>"; };
+		EB936D4F2995C8E10027C732 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EBAAA71129945A8D00374286 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		EBAAA7172994698F00374286 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EBB02BB629912F57008A583F /* GraduationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraduationProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +122,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBAF19882997023000A97A53 /* Lottie in Frameworks */,
+				EB936D482995A7170027C732 /* Kingfisher in Frameworks */,
+				EBAF19852996E5CD00A97A53 /* Alamofire in Frameworks */,
 				EB739BB529937A660065634B /* FirebaseDatabase in Frameworks */,
 				EB739BB329937A660065634B /* FirebaseAuth in Frameworks */,
 			);
@@ -130,6 +148,7 @@
 		EB41A0B92993D92B003550B8 /* homescreen-module */ = {
 			isa = PBXGroup;
 			children = (
+				EB8593AD2995784A006ABE92 /* collectionview */,
 				EB41A0C82993E050003550B8 /* protocols */,
 				EB41A0C72993E04B003550B8 /* router */,
 				EB41A0C62993E045003550B8 /* interactor */,
@@ -479,10 +498,40 @@
 			path = protocols;
 			sourceTree = "<group>";
 		};
+		EB4421BB29980C5700534BAB /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				EB41A0B82993D7B1003550B8 /* loginscreen-module */,
+				EB41A0B92993D92B003550B8 /* homescreen-module */,
+				EB41A0BA2993D9AB003550B8 /* mealdetailscreen-module */,
+				EB41A0BB2993DA12003550B8 /* orderscreen-module */,
+				EB41A0BC2993DB5B003550B8 /* accountdetailscreen-module */,
+				EB41A0BD2993DB8B003550B8 /* favoritefoodscreen-module */,
+				EB41A0BE2993DC30003550B8 /* watchdeliveryscreen-module */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		EB8593AD2995784A006ABE92 /* collectionview */ = {
+			isa = PBXGroup;
+			children = (
+				EB8593AE299578D4006ABE92 /* MealCell.swift */,
+			);
+			path = collectionview;
+			sourceTree = "<group>";
+		};
+		EB936D512995C9500027C732 /* service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
 		EBAAA71029945A6100374286 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
 				EBAAA71129945A8D00374286 /* String+Ext.swift */,
+				EB915ED129959FA90029C554 /* CGFloat+Ext.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -490,6 +539,8 @@
 		EBAAA713299462E400374286 /* utilities */ = {
 			isa = PBXGroup;
 			children = (
+				EB936D4F2995C8E10027C732 /* NetworkManager.swift */,
+				EB915ECF29959F4E0029C554 /* UIHelper.swift */,
 			);
 			path = utilities;
 			sourceTree = "<group>";
@@ -498,6 +549,8 @@
 			isa = PBXGroup;
 			children = (
 				EBAAA7172994698F00374286 /* Constants.swift */,
+				EB936D492995AECF0027C732 /* Meals.swift */,
+				EB936D4B2995B0780027C732 /* BasketMeals.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -523,16 +576,11 @@
 			children = (
 				EBB02BB929912F57008A583F /* AppDelegate.swift */,
 				EBB02BBB29912F57008A583F /* SceneDelegate.swift */,
-				EBAAA7162994693D00374286 /* entity */,
-				EBAAA713299462E400374286 /* utilities */,
 				EBAAA71029945A6100374286 /* extensions */,
-				EB41A0B82993D7B1003550B8 /* loginscreen-module */,
-				EB41A0B92993D92B003550B8 /* homescreen-module */,
-				EB41A0BA2993D9AB003550B8 /* mealdetailscreen-module */,
-				EB41A0BB2993DA12003550B8 /* orderscreen-module */,
-				EB41A0BC2993DB5B003550B8 /* accountdetailscreen-module */,
-				EB41A0BD2993DB8B003550B8 /* favoritefoodscreen-module */,
-				EB41A0BE2993DC30003550B8 /* watchdeliveryscreen-module */,
+				EBAAA713299462E400374286 /* utilities */,
+				EBAAA7162994693D00374286 /* entity */,
+				EB936D512995C9500027C732 /* service */,
+				EB4421BB29980C5700534BAB /* modules */,
 				EBB02BBF29912F57008A583F /* Main.storyboard */,
 				EBB02BC229912F57008A583F /* Assets.xcassets */,
 				EBB02BC429912F57008A583F /* LaunchScreen.storyboard */,
@@ -561,6 +609,9 @@
 			packageProductDependencies = (
 				EB739BB229937A660065634B /* FirebaseAuth */,
 				EB739BB429937A660065634B /* FirebaseDatabase */,
+				EB936D472995A7170027C732 /* Kingfisher */,
+				EBAF19842996E5CD00A97A53 /* Alamofire */,
+				EBAF19872997023000A97A53 /* Lottie */,
 			);
 			productName = GraduationProject;
 			productReference = EBB02BB629912F57008A583F /* GraduationProject.app */;
@@ -592,6 +643,9 @@
 			mainGroup = EBB02BAD29912F57008A583F;
 			packageReferences = (
 				EB739BB129937A660065634B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				EB936D462995A7170027C732 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				EBAF19832996E5CD00A97A53 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				EBAF19862997023000A97A53 /* XCRemoteSwiftPackageReference "lottie-spm" */,
 			);
 			productRefGroup = EBB02BB729912F57008A583F /* Products */;
 			projectDirPath = "";
@@ -631,7 +685,9 @@
 				EB41A11B2993E418003550B8 /* HomeScreenPresenter.swift in Sources */,
 				EB41A1172993E407003550B8 /* FavoriteFoodScreenInteractor.swift in Sources */,
 				EBB02BBE29912F57008A583F /* LoginScreen.swift in Sources */,
+				EB8593AF299578D4006ABE92 /* MealCell.swift in Sources */,
 				EB41A0ED2993E221003550B8 /* WatchDeliveryScreen.swift in Sources */,
+				EB915ED229959FA90029C554 /* CGFloat+Ext.swift in Sources */,
 				EB41A11F2993E421003550B8 /* OrderScreenPresenter.swift in Sources */,
 				EB41A0E92993E1DC003550B8 /* AccountDetailScreen.swift in Sources */,
 				EB41A1032993E3CA003550B8 /* HomeScreenRouter.swift in Sources */,
@@ -646,19 +702,23 @@
 				EB41A1052993E3D7003550B8 /* MealDetailScreenRouter.swift in Sources */,
 				EB41A11D2993E41D003550B8 /* MealDetailScreenPresenter.swift in Sources */,
 				EBB02BBA29912F57008A583F /* AppDelegate.swift in Sources */,
+				EB936D502995C8E10027C732 /* NetworkManager.swift in Sources */,
 				EB41A1072993E3DC003550B8 /* OrderScreenRouter.swift in Sources */,
 				EB41A0F92993E3A1003550B8 /* MealDetailScreenProtocols.swift in Sources */,
 				EB41A0E52993E1BA003550B8 /* MealDetailScreen.swift in Sources */,
 				EB41A0FF2993E3B6003550B8 /* FavoriteFoodScreenProtocols.swift in Sources */,
 				EB41A1152993E402003550B8 /* AccountDetailScreenInteractor.swift in Sources */,
 				EBB02BBC29912F57008A583F /* SceneDelegate.swift in Sources */,
+				EB915ED029959F4E0029C554 /* UIHelper.swift in Sources */,
 				EB41A0FD2993E3AF003550B8 /* AccountDetailScreenProtocols.swift in Sources */,
 				EB41A0F12993E32B003550B8 /* LoginScreenRouter.swift in Sources */,
 				EBAAA71229945A8D00374286 /* String+Ext.swift in Sources */,
 				EB41A1112993E3F7003550B8 /* MealDetailScreenInteractor.swift in Sources */,
 				EB41A10D2993E3E7003550B8 /* WatchDeliveryScreenRouter.swift in Sources */,
 				EB41A1132993E3FD003550B8 /* OrderScreenInteractor.swift in Sources */,
+				EB936D4C2995B0780027C732 /* BasketMeals.swift in Sources */,
 				EB41A1232993E42C003550B8 /* FavoriteFoodScreenPresenter.swift in Sources */,
+				EB936D4A2995AECF0027C732 /* Meals.swift in Sources */,
 				EB41A0EF2993E321003550B8 /* LoginScreenProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -889,6 +949,30 @@
 				kind = branch;
 			};
 		};
+		EB936D462995A7170027C732 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		EBAF19832996E5CD00A97A53 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		EBAF19862997023000A97A53 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -901,6 +985,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EB739BB129937A660065634B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
+		};
+		EB936D472995A7170027C732 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB936D462995A7170027C732 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		EBAF19842996E5CD00A97A53 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBAF19832996E5CD00A97A53 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		EBAF19872997023000A97A53 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBAF19862997023000A97A53 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

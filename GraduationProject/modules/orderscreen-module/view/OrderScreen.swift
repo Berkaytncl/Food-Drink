@@ -13,5 +13,7 @@ class OrderScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        OrderScreenRouter.createModule(ref: self)
     }
 }

@@ -14,11 +14,12 @@ class LoginScreenInteractor: PresenterToInteractorLoginScreenProtocol {
     
     func login(email: String?, password: String?) {
         if !email.isNilOrEmpty && !password.isNilOrEmpty {
-            Auth.auth().signIn(withEmail: email!, password: password!) { authDataResult, error in
+            Auth.auth().signIn(withEmail: email!, password: password!) { [weak self] authDataResult, error in
+                guard let strongSelf = self else { return }
                 if error != nil {
-                    self.loginScreenPresenter?.dataSendToPresenter(loginSuccess: false, error: error)
+                    strongSelf.loginScreenPresenter?.dataSendToPresenter(loginSuccess: false, error: error)
                 } else {
-                    self.loginScreenPresenter?.dataSendToPresenter(loginSuccess: true, error: nil)
+                    strongSelf.loginScreenPresenter?.dataSendToPresenter(loginSuccess: true, error: nil)
                 }
             }
         } else {

@@ -13,5 +13,7 @@ class FavoriteFoodScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        FavoriteFoodScreenRouter.createModule(ref: self)
     }
 }

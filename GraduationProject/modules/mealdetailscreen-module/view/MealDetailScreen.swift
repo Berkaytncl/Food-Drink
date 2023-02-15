@@ -13,5 +13,7 @@ class MealDetailScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        MealDetailScreenRouter.createModule(ref: self)
     }
 }

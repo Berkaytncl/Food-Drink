@@ -25,7 +25,7 @@ class AccountDetailScreen: UIViewController {
 extension AccountDetailScreen: PresenterToViewAccountDetailScreenProtocol {
     func dataSendToView(error: Error?) {
         guard error != nil else {
-            self.performSegue(withIdentifier: "toLoginScreen", sender: nil)
+            self.performSegue(withIdentifier: Constants.Destination.toLoginScreen, sender: nil)
             return
         }
         self.errorMessage(titleInput: Constants.error, messageInput: Constants.couldNotLogOut)

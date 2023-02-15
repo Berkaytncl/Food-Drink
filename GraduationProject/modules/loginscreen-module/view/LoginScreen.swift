@@ -16,6 +16,8 @@ class LoginScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        LoginScreenRouter.createModule(ref: self)
     }
 
     @IBAction func loginClicked(_ sender: Any) {
@@ -36,7 +38,7 @@ class LoginScreen: UIViewController {
 extension LoginScreen: PresenterToViewLoginScreenProtocol {
     func dataSendToView(loginSuccess: Bool, error: Error?) {
         if loginSuccess {
-            self.performSegue(withIdentifier: "toHomeScreen", sender: nil)
+            self.performSegue(withIdentifier: Constants.Destination.toHomeScreen, sender: nil)
         } else {
             guard let error = error else {
                 self.errorMessage(titleInput: Constants.error, messageInput: Constants.enterValidMailOrPassword)

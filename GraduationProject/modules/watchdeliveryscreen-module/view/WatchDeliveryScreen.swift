@@ -13,5 +13,7 @@ class WatchDeliveryScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        WatchDeliveryScreenRouter.createModule(ref: self)
     }
 }

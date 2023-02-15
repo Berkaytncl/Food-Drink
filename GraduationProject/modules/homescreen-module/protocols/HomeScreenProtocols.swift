@@ -10,19 +10,15 @@ import Foundation
 //Main Protocols
 protocol ViewToPresenterHomeScreenProtocol {
     var homeScreenInteractor: PresenterToInteractorHomeScreenProtocol? { get set }
-    //var homeScreenView: PresenterToViewHomeScreenProtocol? { get set }
+    var homeScreenView: PresenterToViewHomeScreenProtocol? { get set }
     
-    //func uploadTodos()
-    //func search(searchWord: String)
-    //func delete(todoId: Int)
+    func uploadMeals()
 }
 
 protocol PresenterToInteractorHomeScreenProtocol {
-    //var homeScreenPresenter: InteractorToPresenterHomeScreenProtocol? { get set }
+    var homeScreenPresenter: InteractorToPresenterHomeScreenProtocol? { get set }
     
-    //func uploadTodos()
-    //func search(searchWord: String)
-    //func delete(todoId: Int)
+    func uploadMeals()
 }
 
 //Router Protocol
@@ -32,9 +28,9 @@ protocol PresenterToRouterHomeScreenProtocol {
 
 //Carrer Protocoller
 protocol InteractorToPresenterHomeScreenProtocol {
-    //func dataSendToPresenter(todoList: [ToDos])
+    func dataSendToPresenter(meals: [Meal])
 }
 
 protocol PresenterToViewHomeScreenProtocol {
-    //func dataSendToView(todoList: [ToDos])
+    func dataSendToView(meals: [Meal])
 }
