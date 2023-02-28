@@ -12,9 +12,8 @@ final class NetworkManager {
     static let shared = NetworkManager()
     private init() {}
 
-    func APICall<T: Codable>(type: ItemType, parameters:[String:Any]? = nil, handler: @escaping (_ result: T) -> (Void)) {
-        
-        AF.request(type.url, method: type.httpMethod, encoding: type.encoding).response { response in
+    func APICall<T: Codable>(type: APICallType, parameters:[String:Any]? = nil, handler: @escaping (_ result: T?) -> ()) {
+        AF.request(type.url, method: type.httpMethod, parameters: parameters).response { response in
             switch response.result {
             case .success(_):
                 if let data = response.data {
@@ -22,7 +21,7 @@ final class NetworkManager {
                         let decode = try JSONDecoder().decode(T.self, from: data)
                         handler(decode)
                     } catch {
-                        print(error.localizedDescription)
+                        handler(nil)
                     }
                 }
             case .failure(let error):
@@ -32,20 +31,19 @@ final class NetworkManager {
     }
 }
 
-enum ItemType {
+enum APICallType {
     case bringAllFoodURL
     case bringTheBasketURL
     case addToBasketURL
     case deleteFromBasketURL
 }
 
-protocol ItemProperties {
+protocol APICallProperties {
     var url: String { get }
     var httpMethod: HTTPMethod { get }
-    var encoding: ParameterEncoding { get }
 }
 
-extension ItemType: ItemProperties {
+extension APICallType: APICallProperties {
     var url: String {
         switch self {
         case .bringAllFoodURL:
@@ -65,13 +63,6 @@ extension ItemType: ItemProperties {
             return .get
         case .bringTheBasketURL, .addToBasketURL, .deleteFromBasketURL:
             return .post
-        }
-    }
-    
-    var encoding: Alamofire.ParameterEncoding {
-        switch self {
-        default:
-            return JSONEncoding.default
         }
     }
 }
