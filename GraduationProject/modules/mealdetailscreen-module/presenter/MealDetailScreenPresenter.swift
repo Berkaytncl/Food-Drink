@@ -10,23 +10,23 @@ import Foundation
 class MealDetailScreenPresenter: ViewToPresenterMealDetailScreenProtocol {
     
     var mealDetailScreenInteractor: PresenterToInteractorMealDetailScreenProtocol?
-    //var mealDetailScreenView: PresenterToViewMealDetailScreenProtocol?
+    var mealDetailScreenView: PresenterToViewMealDetailScreenProtocol?
     
-//    func uploadTodos() {
-//        homeScreenInteractor?.uploadTodos()
-//    }
-//
-//    func search(searchWord: String) {
-//        homeScreenInteractor?.search(searchWord: searchWord)
-//    }
-//
-//    func delete(todoId: Int) {
-//        homeScreenInteractor?.delete(todoId: todoId)
-//    }
+    func addBasket(meal: Meal, piece: Int) {
+        mealDetailScreenInteractor?.addBasket(meal: meal, piece: piece)
+    }
+    
+    func addFavorite(mealId: String) {
+        mealDetailScreenInteractor?.addFavorite(mealId: mealId)
+    }
+    
+    func deleteFavorite(key: String) {
+        mealDetailScreenInteractor?.deleteFavorite(key: key)
+    }
 }
 
 extension MealDetailScreenPresenter: InteractorToPresenterMealDetailScreenProtocol {
-//    func dataSendToPresenter(todoList: [ToDos]) {
-//        homeScreenView?.dataSendToView(todoList: todoList)
-//    }
+    func successfulTransactionInformationToPresenter(mealName: String, piece: Int) {
+        mealDetailScreenView?.successfulTransactionInformationToView(mealName: mealName, piece: piece)
+    }
 }

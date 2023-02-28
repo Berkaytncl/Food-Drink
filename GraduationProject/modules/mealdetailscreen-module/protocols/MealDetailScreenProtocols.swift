@@ -10,19 +10,19 @@ import Foundation
 //Main Protocols
 protocol ViewToPresenterMealDetailScreenProtocol {
     var mealDetailScreenInteractor: PresenterToInteractorMealDetailScreenProtocol? { get set }
-    //var mealDetailScreenView: PresenterToViewMealDetailScreenProtocol? { get set }
+    var mealDetailScreenView: PresenterToViewMealDetailScreenProtocol? { get set }
     
-    //func uploadTodos()
-    //func search(searchWord: String)
-    //func delete(todoId: Int)
+    func addBasket(meal: Meal, piece: Int)
+    func addFavorite(mealId: String)
+    func deleteFavorite(key: String)
 }
 
 protocol PresenterToInteractorMealDetailScreenProtocol {
-    //var mealDetailScreenPresenter: InteractorToPresenterMealDetailScreenProtocol? { get set }
+    var mealDetailScreenPresenter: InteractorToPresenterMealDetailScreenProtocol? { get set }
     
-    //func uploadTodos()
-    //func search(searchWord: String)
-    //func delete(todoId: Int)
+    func addBasket(meal: Meal, piece: Int)
+    func addFavorite(mealId: String)
+    func deleteFavorite(key: String)
 }
 
 //Router Protocol
@@ -32,9 +32,9 @@ protocol PresenterToRouterMealDetailScreenProtocol {
 
 //Carrer Protocoller
 protocol InteractorToPresenterMealDetailScreenProtocol {
-    //func dataSendToPresenter(todoList: [ToDos])
+    func successfulTransactionInformationToPresenter(mealName: String, piece: Int)
 }
 
 protocol PresenterToViewMealDetailScreenProtocol {
-    //func dataSendToView(todoList: [ToDos])
+    func successfulTransactionInformationToView(mealName: String, piece: Int)
 }

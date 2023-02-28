@@ -16,9 +16,9 @@ class MealDetailScreenRouter: PresenterToRouterMealDetailScreenProtocol {
         
         //Presenter
         ref.mealDetailScreenPresenterObject?.mealDetailScreenInteractor = MealDetailScreenInteractor()
-//        ref.mealDetailScreenPresenterObject?.mealDetailScreenView = ref
-//        
-//        //Interactor
-//        ref.mealDetailScreenPresenterObject?.mealDetailScreenInteractor?.mealDetailScreenPresenter = presenter
+        ref.mealDetailScreenPresenterObject?.mealDetailScreenView = ref
+        
+        //Interactor
+        ref.mealDetailScreenPresenterObject?.mealDetailScreenInteractor?.mealDetailScreenPresenter = presenter
     }
 }
