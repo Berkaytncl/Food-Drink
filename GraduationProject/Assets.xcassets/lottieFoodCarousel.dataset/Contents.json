@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "foodCarousel.json",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
