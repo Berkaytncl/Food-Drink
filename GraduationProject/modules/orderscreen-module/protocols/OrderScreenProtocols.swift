@@ -10,19 +10,19 @@ import Foundation
 //Main Protocols
 protocol ViewToPresenterOrderScreenProtocol {
     var orderScreenInteractor: PresenterToInteractorOrderScreenProtocol? { get set }
-    //var orderScreenView: PresenterToViewOrderScreenProtocol? { get set }
+    var orderScreenView: PresenterToViewOrderScreenProtocol? { get set }
     
-    //func uploadTodos()
-    //func search(searchWord: String)
-    //func delete(todoId: Int)
+    func uploadBasketMeals()
+    func deleteMealFromBasket(basketMealId: [String])
+    func placeOrder(basketMeals: [BasketMeal])
 }
 
 protocol PresenterToInteractorOrderScreenProtocol {
-    //var orderScreenPresenter: InteractorToPresenterOrderScreenProtocol? { get set }
+    var orderScreenPresenter: InteractorToPresenterOrderScreenProtocol? { get set }
     
-    //func uploadTodos()
-    //func search(searchWord: String)
-    //func delete(todoId: Int)
+    func uploadBasketMeals()
+    func deleteMealFromBasket(basketMealId: [String])
+    func placeOrder(basketMeals: [BasketMeal])
 }
 
 //Router Protocol
@@ -32,9 +32,14 @@ protocol PresenterToRouterOrderScreenProtocol {
 
 //Carrer Protocoller
 protocol InteractorToPresenterOrderScreenProtocol {
-    //func dataSendToPresenter(todoList: [ToDos])
+    func dataSendToPresenter(basketMeals: [BasketMeal], modifiedBasketMeals: [BasketMealItem])
 }
 
 protocol PresenterToViewOrderScreenProtocol {
-    //func dataSendToView(todoList: [ToDos])
+    func dataSendToView(basketMeals: [BasketMeal], modifiedBasketMeals: [BasketMealItem])
+}
+
+//Cell Protocol
+protocol OrderCellProtocol {
+    func deleteBasketPressed(indexPath: IndexPath)
 }

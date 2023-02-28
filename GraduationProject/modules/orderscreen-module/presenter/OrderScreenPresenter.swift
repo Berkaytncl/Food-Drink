@@ -10,23 +10,23 @@ import Foundation
 class OrderScreenPresenter: ViewToPresenterOrderScreenProtocol {
     
     var orderScreenInteractor: PresenterToInteractorOrderScreenProtocol?
-    //var orderScreenView: PresenterToViewOrderScreenProtocol?
+    var orderScreenView: PresenterToViewOrderScreenProtocol?
     
-//    func uploadTodos() {
-//        homeScreenInteractor?.uploadTodos()
-//    }
-//
-//    func search(searchWord: String) {
-//        homeScreenInteractor?.search(searchWord: searchWord)
-//    }
-//
-//    func delete(todoId: Int) {
-//        homeScreenInteractor?.delete(todoId: todoId)
-//    }
+    func uploadBasketMeals() {
+        orderScreenInteractor?.uploadBasketMeals()
+    }
+
+    func deleteMealFromBasket(basketMealId: [String]) {
+        orderScreenInteractor?.deleteMealFromBasket(basketMealId: basketMealId)
+    }
+    
+    func placeOrder(basketMeals: [BasketMeal]) {
+        orderScreenInteractor?.placeOrder(basketMeals: basketMeals)
+    }
 }
 
 extension OrderScreenPresenter: InteractorToPresenterOrderScreenProtocol {
-//    func dataSendToPresenter(todoList: [ToDos]) {
-//        homeScreenView?.dataSendToView(todoList: todoList)
-//    }
+    func dataSendToPresenter(basketMeals: [BasketMeal], modifiedBasketMeals: [BasketMealItem]) {
+        orderScreenView?.dataSendToView(basketMeals: basketMeals, modifiedBasketMeals: modifiedBasketMeals)
+    }
 }

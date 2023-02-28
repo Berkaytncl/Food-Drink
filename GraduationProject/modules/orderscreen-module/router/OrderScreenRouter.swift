@@ -16,9 +16,9 @@ class OrderScreenRouter: PresenterToRouterOrderScreenProtocol {
         
         //Presenter
         ref.orderScreenPresenterObject?.orderScreenInteractor = OrderScreenInteractor()
-//        ref.orderScreenPresenterObject?.orderScreenView = ref
-//        
-//        //Interactor
-//        ref.orderScreenPresenterObject?.orderScreenInteractor?.orderScreenPresenter = presenter
+        ref.orderScreenPresenterObject?.orderScreenView = ref
+        
+        //Interactor
+        ref.orderScreenPresenterObject?.orderScreenInteractor?.orderScreenPresenter = presenter
     }
 }
