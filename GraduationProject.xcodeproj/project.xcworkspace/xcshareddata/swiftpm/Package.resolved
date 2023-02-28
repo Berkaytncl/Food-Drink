@@ -100,12 +100,12 @@
       }
     },
     {
-      "identity" : "lottie-spm",
+      "identity" : "lottie-ios",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/airbnb/lottie-spm.git",
+      "location" : "https://github.com/airbnb/lottie-ios.git",
       "state" : {
-        "revision" : "f2b51cea3a3da8516d9f63f7cec1fabcdcf704dc",
-        "version" : "4.1.2"
+        "branch" : "master",
+        "revision" : "b407c1118bbdc5b44e5ed477ecda979a4f00c8ce"
       }
     },
     {
