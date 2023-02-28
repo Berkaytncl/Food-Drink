@@ -26,7 +26,7 @@ struct BasketMeal: Codable {
     let mealName: String?
     let mealImageName: String?
     let mealPrice: String?
-    let foodOrderPiece: String?
+    var mealOrderPiece: String?
     let userName: String?
     
     enum CodingKeys: String, CodingKey {
@@ -34,7 +34,7 @@ struct BasketMeal: Codable {
         case mealName = "yemek_adi"
         case mealImageName = "yemek_resim_adi"
         case mealPrice = "yemek_fiyat"
-        case foodOrderPiece = "yemek_siparis_adet"
+        case mealOrderPiece = "yemek_siparis_adet"
         case userName = "kullanici_adi"
     }
     
@@ -50,10 +50,18 @@ struct BasketMeal: Codable {
     var _mealPrice: String {
         mealPrice ?? "0"
     }
-    var _foodOrderPiece: String {
-        foodOrderPiece ?? "0"
+    var _mealOrderPiece: String {
+        mealOrderPiece ?? "0"
     }
     var _userName: String {
         userName ?? "anonim"
     }
 }
+
+struct BasketMealItem {
+    var mealName: String
+    var mealImageName: String
+    var mealPrice: String
+    var mealOrderPiece: String
+}
+
