@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import Lottie
 
 class LoginScreen: UIViewController {
 
     var loginScreenPresenterObject: ViewToPresenterLoginScreenProtocol?
     
+    @IBOutlet weak var animationView: LottieAnimationView!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -18,6 +20,8 @@ class LoginScreen: UIViewController {
         super.viewDidLoad()
         
         LoginScreenRouter.createModule(ref: self)
+        
+        configureAnimationView()
     }
 
     @IBAction func loginClicked(_ sender: Any) {
@@ -50,7 +54,16 @@ extension LoginScreen: PresenterToViewLoginScreenProtocol {
 }
 
 extension LoginScreen {
-    func errorMessage(titleInput: String, messageInput: String) {
+    func configureAnimationView() {
+        animationView.animation = .asset("lottieRestaurant")
+        animationView.loopMode = .loop
+        
+        if !animationView.isAnimationPlaying {
+            animationView.play()
+        }
+    }
+    
+    func errorMessage(titleInput: String, messageInput: String) { 
         let alert = UIAlertController(title: titleInput, message: messageInput, preferredStyle: UIAlertController.Style.alert)
         let okButton = UIAlertAction(title: Constants.ok, style: UIAlertAction.Style.default, handler: nil)
         alert.addAction(okButton)

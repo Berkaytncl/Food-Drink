@@ -29,7 +29,8 @@ class LoginScreenInteractor: PresenterToInteractorLoginScreenProtocol {
     
     func signup(email: String?, password: String?) {
         if !email.isNilOrEmpty && !password.isNilOrEmpty {
-            Auth.auth().createUser(withEmail: email!, password: password!) { authDataResult, error in
+            Auth.auth().createUser(withEmail: email!, password: password!) { [weak self] authDataResult, error in
+                guard let self = self else { return }
                 if error != nil {
                     self.loginScreenPresenter?.dataSendToPresenter(loginSuccess: false, error: error)
                 } else {
