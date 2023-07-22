@@ -1,9 +1,7 @@
 # Food&Drink
  
 <p align="center">
-  <a href="https://github.com/Berkaytncl/Food-Drink">
     <img src="https://github.com/Berkaytncl/Food-Drink/assets/98055405/da68909a-b771-43de-a11f-14aa09c0236b" alt="Logo" width="100" height="100">
-  </a>
 </p>
 
 ## Table Of Contents
