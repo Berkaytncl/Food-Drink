@@ -12,6 +12,8 @@
 * [Features](#features)
 
 ## Technologies
+* UIKit
+* Interface Builder (Storyboard)
 * VIPER Architecture Pattern
 * Alamofire
 * Kingfisher
